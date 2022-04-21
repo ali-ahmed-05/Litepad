@@ -32,6 +32,10 @@ async function main() {
     litePad = await LitePad.deploy();
     await litePad.deployed();
 
+    Busd = await ethers.getContractFactory("LitePad");
+    busd = await Busd.deploy();
+    await busd.deployed();
+
     RewardToken = await ethers.getContractFactory("RewardToken");
     rewardToken = await RewardToken.deploy();
     await rewardToken.deployed();
@@ -45,7 +49,7 @@ async function main() {
     await ticketConsumer.deployed();
 
     Factory = await ethers.getContractFactory("Factory");
-    factory = await Factory.deploy(ticketConsumer.address , litePad.address);
+    factory = await Factory.deploy(ticketConsumer.address , busd.address);
     await factory.deployed();
 
     Staking = await ethers.getContractFactory("Staking");
