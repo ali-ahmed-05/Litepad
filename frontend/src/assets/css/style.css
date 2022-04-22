@@ -1,0 +1,977 @@
+:root{
+
+    --primary:#ffaa00;
+    --secondary:#0048a8;
+    --primary-dark:#db7400;
+    --black:#000;
+    --white:#fff;
+    --dark:#29292b;
+    --grey:#ffffff80;
+    --dark-gray:#a6a6a6;
+}
+body{
+
+    overflow-x: hidden;
+    font-family: "Roboto Slab" !important;
+
+}
+
+.primary-btn{
+
+    line-height: 50px;
+    color: var(--white) !important;
+    text-transform: uppercase;
+    background-color:var(--secondary);
+    text-align: center;
+    padding: 0 50px;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+
+}
+
+.primary-btn:hover{
+
+    background-color: var(--primary);
+
+}
+
+.secondary-btn{
+    
+    color: var(--white) !important;
+    background-color:var(--primary-dark);
+    font-weight: 500;
+    text-align: center;
+    padding: 14px 50px;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    line-height: 23px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+.App{
+    position: relative;
+}
+.text{
+    color: black;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid red; */
+    box-sizing: border-box !important;
+}
+
+.spacing{
+
+    height: 40px;
+
+}
+
+.logo_div{
+    padding: 20px;
+    margin-left: 3rem;
+}
+.nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.nav_bar li{
+
+    padding:0 15px;
+
+}
+
+.nav_bar a{
+
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav_bar a:hover{
+
+    color: var(--primary);
+    
+}
+.main{
+
+    min-height: 80vh;
+    height: 100%;
+
+}
+
+.preSale-box{
+
+    padding: 40px 30px 20px;
+    background-color: var(--black);
+    border-radius: 9px;
+    color: var(--white);
+    
+
+}
+
+.flip-timer {
+    --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+    --fcc-digit-block-width: 35px; /* digit card's width */
+    --fcc-digit-block-height: 70px; /* digit card's height */
+    --fcc-digit-font-size: 40px; /* font size of digit */
+    --fcc-digit-color: var(--black); /* color of digit */
+    --fcc-background: var(--white); /* digit card's background */
+    --fcc-label-color: var(--grey); /* time label's color */
+    --fcc-divider-color: var(--black); /* divider's color */
+    padding: 20px 0;
+  }
+
+  .flip-timer._qWTcH{
+
+    justify-content: center;
+
+  }
+
+  .flip-timer ._2aOn7{
+
+    font-size: 12px;
+
+  }
+
+.flip-timer ._3cpN7 {
+    font-weight: 400;
+    border-radius: 2px;
+}
+
+.flip-timer ._3cpN7 ._2EBbg:not(:last-child) {
+     margin-right: 0;
+}
+
+.flip-timer ._2hRXr{
+
+    margin-left: 2px;
+    margin-right: 2px;
+
+}
+
+.flip-timer ._3luxx._2kgZC{
+
+    box-shadow: 0px 20px 20px 0px #00000094;
+
+}
+
+.btn-grp{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.btn-grp .primary-btn{
+
+    margin-bottom: 25px;
+
+}
+
+
+.preSale-box p{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.presale_dollar_div{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+
+}
+
+.presale_dollar_div p{
+
+    font-size: 12px;
+    color: var(--grey);
+    font-weight: 300;
+
+}
+
+.sale-progress p{
+
+    font-size: 12px;
+
+}
+
+.sale-progress {
+  margin: 40px auto;
+  position: relative;
+}
+
+.progress {
+  border-radius: 20px !important;
+}
+
+.progress-bar {
+  background-color: var(--secondary) !important;
+  border-radius: 0 20px 20px 0;
+}
+
+.soft-cap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.soft-cap p {
+  margin: 10px 0;
+
+}
+
+
+.sale-value p {
+  top: -25px;
+  position: absolute;
+}
+
+.sale-value p:nth-child(1) {
+  left: 0;
+}
+
+.sale-value p:nth-child(1)::after {
+  content: "";
+  display: block;
+  height: 30px;
+  width: 2px;
+  background: var(--white);
+  /* margin: auto; */
+}
+
+.sale-value p:nth-child(2) {
+  right: 0;
+}
+
+/*  Work for litepad */
+.litepad_main_div{
+background-color: #1d1e20;
+}
+.litepad_heading{
+    padding-top: 20px;
+    color: white;
+}
+.litepad_token{
+    padding-top: 20px;
+    color: white;
+}
+.litepadToken_flex_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+.litepadToken_flex_firstDiv{
+    flex: 0.5;
+    border: 1px solid red;
+}
+.litepadToken_flex_firstDiv p{
+    color: white;
+    font-family: "Roboto Slab";
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+.about-litpad h4{
+
+    line-height: 36px;
+    text-align: left;
+    color: var(--white);
+    margin-bottom: 60px !important;
+    font-weight: 600;
+}
+
+.normal-p{
+
+    line-height: 36px;
+    text-align: left;
+    color: var(--white);
+    font-size: 18px;
+    margin-bottom: 35px;
+    margin-top: 10px;
+
+}
+
+.about-ul{
+
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    text-align: start;
+    column-count: 2;
+
+}
+
+
+.about-ul li{
+
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--dark-gray);
+    margin: 0 0 14px;
+    line-height: 18px;
+
+}
+
+.about-ul li i{
+
+    color: var(--primary);
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+
+
+.watch-video{
+
+    margin-left: 60px !important;
+    padding-left: 40px !important;
+    background-image: url(../images/Cryptocurrency.jpg) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 100%;
+    width: 800px;
+    position: relative;
+
+}
+
+.watch-video-icon a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+}
+
+.watch-video-icon a:hover h4{
+
+    color: var(--primary);
+
+}
+
+.watch-video-icon a i{
+
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+
+}
+
+.watch-video-icon a .play-animate:before{
+
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 54px;
+    height: 54px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    animation: play_zoom 0.8s linear 0.4s infinite;
+
+}
+
+@keyframes play_zoom {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+
+.watch-video-icon a span {
+
+    text-align: start;
+
+}
+
+.watch-video-icon a h4{
+
+    text-transform: uppercase;
+    font-weight: 300;
+    color: var(--white);
+    font-size: 20px;
+    margin-bottom: 0 !important;
+    transition: all .3s;
+}
+
+
+
+.watch-video-icon a span span{
+
+    color: var(--grey);
+    font-size: 14px;
+
+}
+
+.main-title{
+
+color: var(--white) !important;
+font-size: 48px;
+font-weight: 300;
+line-height: 22px;
+text-transform: uppercase;
+position: relative;
+
+}
+
+.main-title:before{
+
+    content: "";
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary);
+    left: 50%;
+    margin-left: -30px;
+
+}
+
+.main-bold{
+
+color: var(--white) !important;
+font-size: 36px;
+font-weight: 600;
+line-height: 22px;
+margin-bottom: 30px;
+text-transform: uppercase;
+
+}
+
+.section-title h5{
+
+color: var(--dark-gray);
+font-size: 18px;
+font-weight: 600;
+line-height: 22px;
+
+    
+}
+
+.grey-text{
+
+    color: var(--dark-gray);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 36px;
+   
+}
+
+.section-title h2{
+
+    color: var(--white);
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 23px;
+    font-size: 36px;
+    line-height: 45px;
+    padding: 10px 0 0;
+    margin: 0 0 23px;
+    position: relative;
+
+}
+
+.section-title h2:before{
+
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -27px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: var(--primary);
+}
+
+.section-title.center h2{
+
+    text-align: center;
+
+}
+
+
+.section-title.center h2:before{
+
+left: 50%;
+margin-left: -30px;
+
+}
+
+.title-partner{
+
+    text-align: center;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 45px;
+    font-style: normal;
+    color: var(--white);
+
+}
+
+.second-head{
+
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+
+
+}
+
+.big-numbers{
+
+    display: flex;
+
+}
+
+.big-numbers h2{
+
+    color: var(--primary);
+    font-size: 78px;
+    font-weight: 300;
+    line-height: 31px;
+
+}
+
+.big-numbers p{
+
+    line-height: 30px;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 20px;
+
+}
+
+.supply{
+
+    background: url(../images/Cryptocurrency.jpg);
+    height: 300px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.supply h5{
+
+    font-weight: 300;
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    padding: 15px 0 0;
+
+}
+
+.supply h3{
+
+    font-size: 78px;
+    line-height: 78px;
+    text-align: center;
+
+}
+
+.partner-logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+
+}
+
+.partner-logo img{
+
+    width: 200px;
+
+}
+
+.partner-table{
+
+    color: var(--white);
+    width: 100%;
+
+}
+.partner-table td{
+
+    padding: 14px;
+    text-align: start;
+    font-size: 16px;
+
+}
+
+.partner-table tr:nth-child(odd){
+
+background-color: var(--dark);
+
+}
+
+.payment-method h4{
+
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--white);
+    text-align: start;
+
+}
+
+.payment-method h4:not(:first-child){
+    margin-bottom: 23px;
+    line-height: 28px;
+    padding: 23px 0 0;
+}
+
+.clickcopy{
+
+    text-align: start;
+    position: relative;
+    margin-top: 30px !important;
+    transition: all .5s;
+
+}
+
+.clickcopy span{
+
+   font-size: 16px;
+   line-height: 24px;
+
+}
+
+.clickcopy code {
+
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: var(--white);
+    border-radius: 4px;
+
+}
+
+.copied{
+
+    top: -27px;
+    position: absolute;
+    left: 0;
+    border: 1px solid var(--black);
+    color: var(--white);
+    font-size: 13px !important;
+    font-weight: 600;
+    background-color: var(--dark);
+    padding: 0 20px;
+    display: none;
+
+}
+
+.clickcopy:hover .copied{
+
+    display: block;
+
+}
+
+
+
+.blue-text{
+
+    color: #9bb2d0;
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.email{
+
+    color: var(--white);
+    font-size: 18px;
+    line-height: 36px;
+
+}
+
+.email a{
+
+    color: var(--primary);
+    text-decoration: none;
+
+}
+
+.email a:hover{
+
+    color: var(--primary);
+    text-decoration: underline;
+
+}
+
+.copyright{
+
+    text-align: start;
+    font-size: 13px;
+    line-height: 15px;
+    color:var(--dark-gray);
+    padding: 14px 0;
+
+}
+
+.social{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+
+}
+
+.social li{
+
+    margin-right: 10px;
+
+}
+
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background: var(--white);
+    line-height: 32px;
+    color: #1d1e20;
+    font-size: 17px;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.social a:hover{
+    background: #00aced;
+    color: var(--white);
+}
+
+/* Stacking */
+
+.staking-dropdown button {
+    background-color: transparent !important;
+    border: 2px solid var(--white);
+    border-radius: 32.6831px;
+    padding: 10px 30px;
+}
+
+
+
+.ido-box {
+    border: 2px dashed var(--white);
+    padding: 30px;
+    color: var(--white);
+    background: var(--black);
+    border-radius: 30px;
+}
+
+.ido-small {
+    padding: 10px;
+}
+
+.staked {
+    padding: 20px 0;
+    border-bottom: 2px dashed var(--grey);
+    text-align: start;
+  
+}
+
+.staked h4,
+.staked h2{
+font-weight: 600;
+}
+
+.max-staked {
+    position: relative;
+}
+
+
+.form-control {
+    background: transparent !important;
+    color: var(--white) !important;
+    outline: none;
+}
+
+.form-control:focus{
+
+    box-shadow: none !important;
+}
+
+.form-control::placeholder{
+
+color: var(--white) !important;
+
+}
+
+.max-staked button {
+    background-color: transparent !important;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.roadmap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 70px 0 170px 0;
+}
+
+.roadmap-item {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap-circle {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-gray);
+}
+
+.circle-active .roadmap-circle {
+    background-color: var(--primary);
+    color: var(--primary);
+}
+
+.roadmap-circle img {
+    width: 30px;
+}
+
+.roadmap-item p {
+    margin-bottom: 0;
+    position: absolute;
+    top: 120%;
+    width: 200px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.circle-active p {
+    color: var(--primary);
+}
+
+.roadmap-hr {
+    border: 2px dashed var(--white);
+    background-color: transparent !important;
+    width: 100px;
+    height: 2px !important;
+    margin: 0 20px;
+    opacity: 1 !important;
+}
+
+.conditions {
+    background-color: var(--secondary);
+    padding: 30px;
+    border-radius: 30px;
+    justify-content: space-between;
+}
+
+.conditions:not(:last-child) {
+    margin-right: 20px;
+}
+
+.conditions-met {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: start;
+}
+
+.conditions h4 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+.tick-enable {
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tick-enable i {
+    font-size: 15px;
+}
+
+.tick-disble i {
+    display: none;
+}
+
+.ido-box p {
+    margin-bottom: 0 !important;
+    text-align: start;
+}
+
+.custom-checkbox {
+    text-align: center;
+    font-size: 25px;
+}
+
+.custom-checkbox input {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.unstaking-warn {
+    display: flex;
+    align-items: center;
+    margin: 3rem 1rem;
+}
+
+.unstaking-warn p {
+    font-size: 20px;
+    line-height: 32px;
+    line-height: 50px;
+    margin-left: 20px;
+}

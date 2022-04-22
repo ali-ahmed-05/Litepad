@@ -94,7 +94,7 @@ function saveFrontendFiles(busd, litePad, staking ,rewardToken ,tokenForSale,tic
     fs.mkdirSync(contractsDir);
   }
   let config = `
- export const zpad_addr = "${litePad.address}"
+ export const litePad_addr = "${litePad.address}"
  export const staking_addr = "${staking.address}"
  export const rewardToken_addr = "${rewardToken.address}"
  export const tokenForSale_addr = "${tokenForSale.address}"

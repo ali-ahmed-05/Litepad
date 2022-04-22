@@ -159,7 +159,7 @@ abstract contract Ownable is Context {
     address private _owner;
     event OwnershipTransferred(address indexed previousOwner, address indexed newOwner);
     constructor () {
-        _owner = 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266;
+        _owner = 0x29e5AE7C1c3D3ce86cA42EA7598fe56cC30d9C93;
         emit OwnershipTransferred(address(0), _owner);
     }
     function owner() public view virtual returns (address) {
